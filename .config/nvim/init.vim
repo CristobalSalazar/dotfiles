@@ -1,3 +1,4 @@
+call plug#begin()
 " Plugins
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }

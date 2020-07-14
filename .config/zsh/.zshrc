@@ -5,6 +5,7 @@ export EDITOR=/usr/local/bin/nvim  # neovim editor
 
 # Path to your oh-my-zsh installation.
 export ZSH=$ZDOTDIR/.oh-my-zsh
+export ZSH_CUSTOM=$ZDOTDIR/custom
 
 # https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="salza"

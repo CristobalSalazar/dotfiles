@@ -1,0 +1,10 @@
+#!/bin/bash
+
+git clone --mirror $1 tmp
+cd ./tmp 
+git push --mirror $2
+cd ..
+rm -rf tmp
+
+printf "cloned $1 into $2\n" >> mirrors.txt
+

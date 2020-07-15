@@ -1,0 +1,15 @@
+#!/bin/bash
+
+npx create-react-app $1 &&
+cd $1 &&
+yarn add react-router-dom &&
+yarn add node-sass &&
+yarn add -D babel-plugin-wildcard &&
+mkdir ./src/pages && mkdir ./src/components &&
+touch ./src/pages/index.js &&
+rm -rf .git && rm .gitignore &&
+echo "y" | yarn eject &&
+code . &&
+code -g ./src/App.js &&
+open "http://localhost:3000" &&
+yarn start

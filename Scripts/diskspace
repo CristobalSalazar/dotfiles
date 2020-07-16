@@ -1,0 +1,18 @@
+#!/bin/zsh
+app_support="$HOME/Library/Application Support"
+caches="$HOME/Library/Caches"
+dev="$HOME/Library/Developer"
+downloads="$HOME/Downloads"
+docs="$HOME/Documents"
+repos="$HOME/Repos"
+unity="$HOME/Unity"
+unity="$HOME/VirtualBox VMs"
+tmp="/private/tmp"
+apps="/Applications"
+
+paths=($app_support $caches $dev $downloads $docs $repos $unity $tmp $apps) 
+
+for i in ${paths[*]}
+do
+  echo "$i  $(du -ch "$i" | tail -1 | sed 's/total//' | sed 's/\ //')"
+done

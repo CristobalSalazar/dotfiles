@@ -1,7 +1,0 @@
-#!/bin/bash
-githuburl="git@github.com:cristobalsalazar/$1.git"
-gitlaburl="git@gitlab.com:cristobalsalazar/$1.git"
-git remote remove origin
-git remote add origin $githuburl
-git remote set-url --add --push origin $githuburl
-git remote set-url --add --push origin $gitlaburl
